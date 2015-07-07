@@ -1,0 +1,23 @@
+---
+- name: Show the main window when launching Activity Monitor
+  state:
+    defaults:
+      key: com.apple.ActivityMonitor:OpenMainWindow
+      set: true
+- name: Visualize CPU history in the Activity Monitor Dock icon
+  state:
+    defaults:
+      key: com.apple.ActivityMonitor:IconType
+      set: 6
+- name: Show all processes in Activity Monitor
+  state:
+    defaults:
+      key: com.apple.ActivityMonitor:ShowCategory
+      set: 0
+- name: Sort Activity Monitor results by CPU usage
+  state:
+    defaults:
+    - key: com.apple.ActivityMonitor:SortColumn
+      set: CPUUsage
+    - key: com.apple.ActivityMonitor:SortDirection
+      set: 0

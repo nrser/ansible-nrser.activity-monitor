@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  author: nrser
+  description: nrser's personal activity-monitor role.
+  license: BSD
+  min_ansible_version: 1.2
+dependencies:
+- role: login_item
+  name: Activity Monitor
+  path: "/Applications/Utilities/Activity Monitor.app"
+  hidden: true
